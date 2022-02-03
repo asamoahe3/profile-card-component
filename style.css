@@ -20,9 +20,9 @@ body {
   font-family: "Kumbh", sans-serif;
   font-size: 18px;
   background-color: var(--dark-cyan);
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   height: 100vh;
   overflow: hidden;
 }
@@ -45,14 +45,12 @@ body {
   height: auto;
 }
 
-.container {
+.card {
   background-color: var(--white);
   border-radius: 10px;
   max-width: 350px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  z-index: 999;
   box-shadow: 10px 10px 20px 10px hsla(229, 23%, 23%, 0.089);
 }
 
