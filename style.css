@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap");
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --desaturated-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: rgb(255, 255, 255);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Kumbh", sans-serif;
+  font-size: 18px;
+  background-color: var(--dark-cyan);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-top {
+  position: absolute;
+  top: -80%;
+  left: -25%;
+}
+
+.bg-bottom {
+  position: absolute;
+  left: 600px;
+  top: 20em;
+}
+
+.bg-top img,
+.bg-bottom {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: 10px;
+  max-width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 20px 10px hsla(229, 23%, 23%, 0.089);
+}
+
+.card-top img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.profile > .profile-image {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  margin: -3em 0 1.5em 0;
+}
+
+.profile > .profile-image img {
+  border: 5px solid var(--white);
+  border-radius: 50%;
+}
+
+.profile h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--desaturated-blue);
+}
+
+.profile .text-mute {
+  color: var(--grayish-blue);
+  font-weight: 400;
+}
+
+.profile .text-small {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0.5em;
+  color: var(--grayish-blue);
+}
+
+.hr {
+  background-color: var(--dark-gray);
+  margin: 1em 0 1em 0;
+  height: 1px;
+}
+
+.rating {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating h3 {
+  text-align: center;
+  color: var(--desaturated-blue);
+}
+
+.rating h3 .line-break {
+  color: var(--grayish-blue);
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+}
